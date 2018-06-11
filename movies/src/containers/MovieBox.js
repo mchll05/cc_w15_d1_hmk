@@ -18,6 +18,7 @@ class MovieBox extends Component {
       <div className="movie-box">
       <h2>Movie List</h2>
       <MovieList data={this.state.data} />
+      <button onClick={ this.showtimes }>Showtimes</button>
     </div>
   );
   }
