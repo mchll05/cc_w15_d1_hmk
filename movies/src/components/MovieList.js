@@ -3,15 +3,15 @@ import Movie from './Movie';
 
 class MovieList extends Component {
   render() {
-    return (
-      <div className='movie-list'>
-      <Movie title='The Nightmare Before Christmas'></Movie>
-      <Movie title='The Royal Tennenbaums'></Movie>
-      <Movie title='All About Eve'></Movie>
-      <Movie title='His Girl Friday'></Movie>
-      <Movie title='Heathers'></Movie>
-    </div>
-    );
+    const movieNodes = this.props.data.map(movie => {
+      return (
+        <Movie title={movie.title} key={movie.id}>
+        {movie.text}
+        </Movie>
+      );
+    });
+
+    return <div className="movie-list">{movieNodes}</div>;
   }
 }
 

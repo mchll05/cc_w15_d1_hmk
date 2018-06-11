@@ -5,7 +5,11 @@ class MovieBox extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: [{ id: 1, title: 'The Royal Tennenbaums', text: 'I love cats'}]
+      data: [
+            { id: 1, title: 'The Royal Tennenbaums', text: 'The Royal Tennenbaums'},
+            { id: 2, title: 'All About Eve', text: 'All About Eve'},
+            { id: 3, title: 'His Girl Friday', text: 'His Girl Friday'},
+            { id: 4, title: 'The Nightmare Before Christmas', text: 'The Nightmare Before Christmas'}]
     };
   }
 
